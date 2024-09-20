@@ -7,14 +7,12 @@ using namespace std;
 
 int main()
 {
-	int tankCapacity = 20;
-	double mpgTown = 23.5;
-	double mpgHighway = 28.9;
+	int surveyValue = 16500;
+	int energyDrinks = surveyValue * 0.15;
+	int citrusDrinks = surveyValue * 0.58;
 
-	double distanceTown = tankCapacity * mpgTown;
-	double distanceHighway = tankCapacity * mpgHighway;
+	cout << "The approximate number of customers purchasing one or more energy drinks a week is " << energyDrinks << '.' << endl;
+	cout << "The approximate number of customers purchasign citrus-flavored energy drinks is " << citrusDrinks << '.' << endl;
 
-	cout << "A car with a tank capacity of 20 gallons will last " << distanceTown << " miles while driving in the town." << endl;
-	cout << "A car with a tank capacity of 20 gallons will last " << distanceHighway << " miles while driving on the highway." << endl;
 	return 0;
 }
