@@ -7,18 +7,14 @@ using namespace std;
 
 int main()
 {
-	double growthRate = 1.5;
-	int initValue = 0;
-	cout << "Please provide the initial level of the ocean in milllimeters: ";
-	cin >> initValue;
-	cout << endl;
-	double fiveValue = (growthRate * 5) + initValue;
-	double sevenValue = (growthRate * 7) + initValue;
-	double tenValue = (growthRate * 10) + initValue;
+	int tankCapacity = 20;
+	double mpgTown = 23.5;
+	double mpgHighway = 28.9;
 
-	cout << "The level of the ocean will be " << fiveValue << " millimeters after 5 years." << endl;
-	cout << "The level of the ocean will be " << sevenValue << " millimeters after 7 years." << endl;
-	cout << "The level of the ocean will be " << tenValue << " millimeters after 10 years." << endl;
+	double distanceTown = tankCapacity * mpgTown;
+	double distanceHighway = tankCapacity * mpgHighway;
 
+	cout << "A car with a tank capacity of 20 gallons will last " << distanceTown << " miles while driving in the town." << endl;
+	cout << "A car with a tank capacity of 20 gallons will last " << distanceHighway << " miles while driving on the highway." << endl;
 	return 0;
 }
